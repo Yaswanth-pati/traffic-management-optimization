@@ -97,7 +97,7 @@ app.layout = html.Div([
             placeholder="Select installation year",
             style={'padding': '3px','minWidth': '300px'}
         ),
-    ], style={'display': 'flex', 'justifyContent': 'space-between'}),  # Flex container styles
+    ], style={'display': 'flex', 'justifyContent': 'space-between'}), 
     dcc.Graph(id='traffic-volume-graph'),
     dcc.Graph(id='volume-speed-scatter-graph'),
     dcc.Graph(id='peak-times-bar-graph'),
@@ -149,48 +149,5 @@ def update_peak_times_bar(selected_roads):
         print("Error updating peak times bar graph:", e)
         return {}
     
-
-# app.layout = html.Div([
-#     html.H1("Traffic Data Visualization"),
-#     dcc.Dropdown(
-#         id='year-dropdown',
-#         options=[{'label': year, 'value': year} for year in df['installed_year'].unique()],
-#         value=None,
-#         multi=True,
-#         placeholder="Select Year",
-#     ),
-#     dcc.Graph(id='year-graph'),
-#     dcc.Graph(id='volume-speed-year-scatter-graph'),
-#     dcc.Graph(id='peak-times-bar-graph')
-# ])
-
-# @app.callback(
-#     Output('year-graph', 'figure'),
-#     Input('year-dropdown', 'value')
-# )
-# def update_graph(selected_years):
-#     if not selected_years:
-#         return {}
-#     filtered_df = df[df['installed_year'].isin(selected_years)]
-#     return create_volume_histogram(filtered_df)
-
-# Callback to update the volume-speed scatter graph
-# @app.callback(
-#     Output('volume-speed-year-scatter-graph', 'figure'),
-#     Input('road-dropdown', 'value')
-# )
-# def update_volume_speed_year_scatter(selected_years):
-#     try:
-#         if not selected_years:
-#             return {}
-#         filtered_df = df[df['installed_year'].isin(selected_years)]
-#         return create_volume_speed_year_scatter(filtered_df)
-#     except Exception as e:
-#         print("Error updating volume-speed scatter:", e)
-#         return {}
-
-
-
-
 if __name__ == '__main__':
     app.run_server(debug=False)
