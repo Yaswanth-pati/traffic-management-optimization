@@ -1,0 +1,19 @@
+<script>
+    function sendRouteRequest(startLat, startLon, endLat, endLon) {
+        fetch('/route', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                start_lat: startLat,
+                start_lon: startLon,
+                end_lat: endLat,
+                end_lon: endLon
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log('Response from server:', data));
+    }
+    </script>
+    

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Prediction System</title>
+
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    </head>
+
+  <body>
+    <div class="image"></div>
+    <h2>SAINT PETER'S UNIVERSITY</h2>
+    <h1>Traffic Prediction</h1>
+
+    <form id="predictForm" action="/predict" method="POST">
+
+      <div class="form">
+        <label for="start"><h2>Start point</h2></label>
+        <select id="start" name="start" required>
+          <option>select start point</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label for="end">
+          <h2>End point</h2>
+        </label>
+        <select id="end" name="end" required>
+          <option value="">select end point</option>
+        </select>
+      </div>
+
+      <div class="move">
+        <input type="submit" class="btn btn-success" value="Route"></input>
+        <button type="button" class="btn btn-success" onclick="showVisuals()">
+          Visuals
+        </button>
+      </div>
+    </form>
+
+    <script src="../static/js/scripts.js"></script>
+    <a href="http://localhost:8501" target="_blank">View Streamlit Dashboard</a>
+  </body>
+</html>
+
+
+
+
