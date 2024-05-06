@@ -1,0 +1,31 @@
+/*stylings for streamlit app */
+
+body,
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input,
+.stButton > button,
+h1 {
+  border-radius: 5px;
+  color: black;
+  font-size: 50px;
+}
+p {
+  font-size: 25px;
+}
+
+.stButton > button {
+  transition: background-color 0.3s ease;
+  font-size: 80px;
+}
+.stColumn {
+  margin: 0 10px;
+}
+
+[data-testid="stApp"] {
+  padding: 20px 40px;
+}
+
+.stTextInput input,
+.stNumberInput input {
+  border: 1px solid #777;
+}

@@ -3,30 +3,35 @@ import pandas as pd
 import joblib
 
 
-# Background
-def add_bg_from_local():
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url(""); 
-            background-size: cover;
-            background-position: center center;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+# Importing css file
+def load_css(file_name):
+    with open(file_name, "r") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-add_bg_from_local()
+load_css("app/styles.css")
 
-# App Header
-st.title(" Traffic Prediction App")
+# background image
+background_image_css = """
+<style>
+html, body, [data-testid="stApp"] {
+    background-image: url("https://cdn.create.vista.com/api/media/medium/318011570/stock-photo-softly-blurred-photo-roads-summer-riding-machines?token=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+</style>
+"""
+st.markdown(background_image_css, unsafe_allow_html=True)
+
+
+# Header
+st.title(" Traffic Accomodation Level")
 st.write("Enter the parameters and predict the traffic level")
 
 # Loading the  Trained Model
-lr_model = joblib.load("optimized_model.pkl")
+lr_model = joblib.load("rf_model.pkl")
 logistic_model = joblib.load("log_model.pkl")
 decision_model = joblib.load("dec_model.pkl")
 
