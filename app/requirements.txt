@@ -1,0 +1,4 @@
+Flask==x.x.x
+streamlit==x.x.x
+pandas==x.x.x
+# other dependencies...
