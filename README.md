@@ -2,11 +2,11 @@
 
 ![Traffic Background](https://cdn.create.vista.com/api/media/medium/318011570/stock-photo-softly-blurred-photo-roads-summer-riding-machines?token=)
 
-## 🚦 Overview
+## Overview
 
 This project is a **Streamlit web application** that predicts the traffic accommodation level based on various road and traffic parameters. Users can input key features such as speed, volume, and commercial vehicle counts to estimate the current traffic range (e.g., low, moderate, high, extremely high) using pre-trained machine learning models.
 
-## ✨ Features
+## Features
 
 - **User-friendly web interface** built with Streamlit
 - **Multiple model support**: Random Forest, Logistic Regression, Decision Tree
@@ -14,14 +14,14 @@ This project is a **Streamlit web application** that predicts the traffic accomm
 - **Custom UI** with stylish background and CSS
 - **Interactive data input** for real-time inference
 
-## 🏗️ App Structure
+## App Structure
 
 - `streamlit_app.py`: Main app file – handles UI, input collection, model loading, prediction, and result display.
 - `rf_model.pkl`, `log_model.pkl`, `dec_model.pkl`: Pre-trained machine learning models (Random Forest, Logistic Regression, Decision Tree).
 - `app/styles.css`: Custom CSS for enhanced UI appearance.
 - `traffic_prediction.ipynb`: Jupyter Notebook for data analysis, EDA, and model training.
 
-## 📊 Input Parameters
+## Input Parameters
 
 - **85th Percentile Speed** (`pc85th_kmh`)
 - **12 Hour Volume** (`volume_12h`)
@@ -29,7 +29,7 @@ This project is a **Streamlit web application** that predicts the traffic accomm
 - **Commercial Vehicle Volume** (`comm_vhcl`)
 - **Peak Volume** (`peakvol`)
 
-## 🧑‍💻 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -77,32 +77,32 @@ traffic-management-optimization/
 └── README.md
 ```
 
-## 🏷️ Prediction Categories
+## Prediction Categories
 
 - **Low**: Less than 40 km/h
 - **Moderate**: 40–50 km/h
 - **High**: 50–60 km/h
 - **Extremely High**: More than 60 km/h
 
-## 📈 Model Training & Data
+## Model Training & Data
 
 - See `traffic_prediction.ipynb` for exploratory data analysis, feature engineering, and model training steps.
 - Models are trained on traffic datasets with relevant features.
 
-## 🚩 Troubleshooting
+## Troubleshooting
 
 - **Model not found:** Make sure `.pkl` files are in the root directory.
 - **Styling not applied:** Check `app/styles.css` exists and paths are correct.
 - **Background image not loading:** Verify internet connection or replace with a local image in the CSS.
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## 📜 License
+## License
 
 [MIT License](LICENSE)
 
 ---
 
-**Developed by [Yaswanth-pati](https://github.com/Yaswanth-pati) and contributors.**
+**Developed by [Yaswanth-pati](https://github.com/Yaswanth-pati) and contributors are [Ajay Raj Singh](https://github.com/ajayrajsingh2003).**
