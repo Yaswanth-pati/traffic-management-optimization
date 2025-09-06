@@ -89,12 +89,6 @@ traffic-management-optimization/
 - See `traffic_prediction.ipynb` for exploratory data analysis, feature engineering, and model training steps.
 - Models are trained on traffic datasets with relevant features.
 
-## Troubleshooting
-
-- **Model not found:** Make sure `.pkl` files are in the root directory.
-- **Styling not applied:** Check `app/styles.css` exists and paths are correct.
-- **Background image not loading:** Verify internet connection or replace with a local image in the CSS.
-
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
@@ -105,4 +99,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-**Developed by [Yaswanth-pati](https://github.com/Yaswanth-pati) and contributors are [Ajay Raj Singh](https://github.com/ajayrajsingh2003).**
+**Developed by [Yaswanth-pati](https://github.com/Yaswanth-pati) and contributors are [Ajay Raj Singh](https://github.com/ajayrajsingh2003) .**
