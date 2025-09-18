@@ -15,7 +15,7 @@ load_css("app/styles.css")
 background_image_css = """
 <style>
 html, body, [data-testid="stApp"] {
-    background-image: url("https://cdn.create.vista.com/api/media/medium/318011570/stock-photo-softly-blurred-photo-roads-summer-riding-machines?token=");
+    # background-image: url("https://cdn.create.vista.com/api/media/medium/318011570/stock-photo-softly-blurred-photo-roads-summer-riding-machines?token=");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
